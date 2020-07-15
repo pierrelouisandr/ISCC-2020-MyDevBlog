@@ -40,3 +40,6 @@ include "front-office-contact.php";
 include ('footer.php');
 
 ?>
+   
+</body>
+</html>

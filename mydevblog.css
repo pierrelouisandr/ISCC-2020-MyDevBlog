@@ -1,14 +1,14 @@
 header {
-    background-color:green; 
+    background-image:url("4k-green.jpg"); 
     border-style: solid;
-    border-color: brown;
     text-shadow: 1px 1px 2px black;
+    
+    
 }
     
   nav ul{ 
         
-        background-color: rgb(56, 163, 56);
-        border-color: brown;
+        background-image:url("4k-green.jpg");
         border-style: solid;
         margin-right: 1280px;
         text-align: left; 
@@ -19,7 +19,7 @@ header {
     }
     
     main.Accueil  { 
-        background-color: white;
+        background-image: url("peau-veau-couleur-marron-fauve.jpg");
         display: block;
         text-align: center;
     }
@@ -29,11 +29,21 @@ header {
         text-align: left;
         margin-top: 30px;
         border-style: solid;
-        border-color: brown;
-        background-color: green;
+        background-image:url("4k-green.jpg");
+       
+
+        
+    }
+
+    body { 
+        
+        background-image: url("girafe.jpg");
+        height: 150px;
         
 
         
     }
+
+
     
     

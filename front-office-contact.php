@@ -1,4 +1,4 @@
-<body>
+
 
 <p><form action ="index.php?page=contact" method ="post">
 

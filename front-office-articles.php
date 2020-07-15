@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="mydevblog.css">
     </head> 
  
-    <body>
 
 
 <?php 
