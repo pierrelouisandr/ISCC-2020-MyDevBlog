@@ -1,5 +1,6 @@
 header {
-    background-image:url("4k-green.jpg"); 
+      
+    background-image: url("girafe.jpg"); 
     border-style: solid;
     text-shadow: 1px 1px 2px black;
     
@@ -19,9 +20,11 @@ header {
     }
     
     main.Accueil  { 
-        background-image: url("peau-veau-couleur-marron-fauve.jpg");
+        background-image:url("texture-424726_960_720.jpg");
         display: block;
         text-align: center;
+        color: burlywood;
+        
     }
     
     
@@ -29,19 +32,12 @@ header {
         text-align: left;
         margin-top: 30px;
         border-style: solid;
-        background-image:url("4k-green.jpg");
-       
-
-        
+        background-image:url("4k-green.jpg"); 
     }
 
     body { 
-        
-        background-image: url("girafe.jpg");
-        height: 150px;
-        
-
-        
+        background-image: url("peau-veau-couleur-marron-fauve.jpg");
+        height: 150px;  
     }
 
 

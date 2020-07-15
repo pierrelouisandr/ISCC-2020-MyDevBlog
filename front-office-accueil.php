@@ -16,6 +16,8 @@
            Ce projet sert à démontrer toutes nos capacités apprises durant ce mois.
         <br><p> Dans ce blog, je partage des informations concernant nos amis <b><i> les animaux </i></b> afin de mieux comprendre leur mode de vie.</p>
         <p> De plus, ce blog sert aussi à sensibiliser les personnes sur <b><i> les animaux </i></b> en voie de disparision.</p>
+
+        
     </main> 
     
    
