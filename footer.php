@@ -6,8 +6,7 @@
     <a href="https://github.com/pierrelouisandr/">GitHub</a>
 
 
-    <a href="http://localhost/ISCC/ISCC-2020-J04/vitrine-accueil.html/">site vitrine</a>
-    <a href="http://localhost/ISCC/ISCC-2020-J03/mon-cv.html/">site cv</a>
+    <a href="http://localhost/ISCC/">site web</a>
 
 </div>
 </footer>
