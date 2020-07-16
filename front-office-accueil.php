@@ -40,7 +40,7 @@ $pdo= connect_to_database();
 $users = $pdo->query("SELECT * FROM articles ORDER BY id DESC LIMIT 5")->fetchAll();
        echo "<ul>";
 foreach ($users as $user){
-    echo "<li><a href = \"front-office-articles.php\">". $user ['titre']."  </a></li>";
+    echo "<li><a href = \"articles.php?articles=".$user['id']."\">". $user ['titre']."  </a></li>";
     echo $user ['extrait']."<br></p>";
 }
 echo "</ul>";

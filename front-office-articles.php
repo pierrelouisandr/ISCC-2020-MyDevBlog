@@ -27,13 +27,12 @@ catch (PDOException $e){
 }
 }
 $pdo= connect_to_database();
-
-$users = $pdo->query("SELECT * FROM articles ")->fetchAll();
+$users = $pdo->query("SELECT * FROM articles")->fetchAll();
        
 foreach ($users as $user){
     echo ("<ul class='articles'>");
 
-    echo ("<B>" . $user['titre'] ."</B>");
+    echo "<a href = \"articles.php?articles=".$user['id']."\">". $user ['titre']."</a>";
 
     echo ("<br><br><image src='" . $user['image'] . "'height=400px >");
     
