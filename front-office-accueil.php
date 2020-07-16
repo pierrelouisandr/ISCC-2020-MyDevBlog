@@ -16,12 +16,37 @@
            Ce projet sert à démontrer toutes nos capacités apprises durant ce mois.
         <br><p> Dans ce blog, je partage des informations concernant nos amis <b><i> les animaux </i></b> afin de mieux comprendre leur mode de vie.</p>
         <p> De plus, ce blog sert aussi à sensibiliser les personnes sur <b><i> les animaux </i></b> en voie de disparision.</p>
+    
+    </main>  
 
-        
-    </main> 
-    
-   
-    
+        <?php 
+      function connect_to_database(){
+     $servername = 'localhost';
+     $username = 'root';
+     $password= '';
+     $madatabase = 'mydevblog';
+try { 
+    $pdo = new PDO("mysql:host=$servername;dbname=$madatabase",$username,$password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    echo "Connected Successfully"; 
+    return $pdo;
+}
+catch (PDOException $e){
+    echo "connection failed : ".$e->getMessage();
+}
+}
+$pdo= connect_to_database();
+?>
 
-    
+<?php 
+$users = $pdo->query("SELECT * FROM articles")->fetchAll();
+       echo "<ul>";
+foreach ($users as $user){
+    echo "<li><a href = \"front-office-articles.php\">". $user ['titre']."  </a></li>";
+    echo $user ['extrait']."<br></p>";
+}
+echo "</ul>";
+
+?>
+  
 </html> 

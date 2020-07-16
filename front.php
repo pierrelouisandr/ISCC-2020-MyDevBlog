@@ -12,6 +12,7 @@
 <li><a href="front-office-accueil.php?page=1">Accueil</a></li>
 <li><a href="front-office-articles.php?page=2">Articles</a></li>
 <li><a href="front-office-contact.php?page=3">Contact</a></li>
+
 </ul>
 </nav>
 <?php
