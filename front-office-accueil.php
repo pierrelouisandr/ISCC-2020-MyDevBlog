@@ -36,10 +36,8 @@ catch (PDOException $e){
 }
 }
 $pdo= connect_to_database();
-?>
-
-<?php 
-$users = $pdo->query("SELECT * FROM articles")->fetchAll();
+ 
+$users = $pdo->query("SELECT * FROM articles ORDER BY id DESC LIMIT 5")->fetchAll();
        echo "<ul>";
 foreach ($users as $user){
     echo "<li><a href = \"front-office-articles.php\">". $user ['titre']."  </a></li>";
