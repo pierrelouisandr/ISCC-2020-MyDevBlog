@@ -1,25 +1,26 @@
 <form action="ajout-article.php" method="post" enctype="multipart/form-data">
-  
+ 
  <label for="titre"></label>
-<input type="text" id="titre" name="titre" placeholder="titre"><br> 
+<input type="text" id="titre" name="titre" placeholder="titre"><br>
 
  <label for="image"></label>
-<input type="text" id="image" name="image" placeholder="image"> <accept="image/png, image/jpeg, image/jpg" required> <br>
+<input type="file" id="image" name="image" placeholder="image" accept="image/png, image/jpeg, image/jpg" required><br>
  
 <label for="auteur"></label>
-<input type="text" id="auteur" name="auteur" placeholder="auteur"><br> 
+<input type="text" id="auteur" name="auteur" placeholder="auteur"><br>
 
  <label for="texte"></label>
-<input type="text" id="texte" name="texte" placeholder="texte"><br> 
+<input type="text" id="texte" name="texte" placeholder="texte"><br>
 
 <label for="date de publication"></label>
-<input type="text" id="date de publication" name= "date de publication" placeholder="date de publication"><br> 
+<input type="text" id="date de publication" name= "date de publication" placeholder="date de publication"><br>
 
 <label for="extrait"></label>
-<input type="text" id="extrait" name= "extrait" placeholder="extrait"><br> 
+<input type="text" id="extrait" name= "extrait" placeholder="extrait"><br>
 
 <input type="submit" value="Envoyer">
 </form>
+
 
  
 <?php
