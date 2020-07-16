@@ -27,10 +27,8 @@ catch (PDOException $e){
 }
 }
 $pdo= connect_to_database();
-?>
 
-<?php 
-$users = $pdo->query("SELECT * FROM articles")->fetchAll();
+$users = $pdo->query("SELECT * FROM articles ")->fetchAll();
        
 foreach ($users as $user){
     echo ("<ul class='articles'>");
