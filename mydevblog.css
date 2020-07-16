@@ -11,14 +11,11 @@ header {
         
         background-image:url("4k-green.jpg");
         border-style: solid;
-        margin-right: 1280px;
+        margin-right: 1275px;
         text-align: left; 
         vertical-align: center;
-       
-
-        
     }
-    
+
     main.Accueil  { 
         background-image:url("texture-424726_960_720.jpg");
         display: block;

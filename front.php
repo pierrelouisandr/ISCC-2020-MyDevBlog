@@ -2,7 +2,7 @@
     <html lang="fr">
     
     <head>
-        <title> Index </title>
+        <title> Les Z'animaux </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mydevblog.css">
@@ -33,6 +33,7 @@ include "front-office-articles.php";
 if (isset($_GET["page"]) && $_GET["page"] == "contact") {
 include "front-office-contact.php";
 } 
+
 
 ?>
 
