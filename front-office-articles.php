@@ -31,18 +31,20 @@ $pdo= connect_to_database();
 
 <?php 
 $users = $pdo->query("SELECT * FROM articles")->fetchAll();
-       echo "<ul>";
+       
 foreach ($users as $user){
-    echo "<li>" . $user ['titre'] ."<br></li>";
+    echo ("<ul class='articles'>");
 
-    echo $user ['date de publication'] ."<br>";
+    echo ("<B>" . $user['titre'] ."</B>");
 
-    echo $user ['auteur'] ."<br>";
+    echo ("<br><br><image src='" . $user['image'] . "'height=400px >");
     
-    echo "<image src='$user[image]'/>";
-    
-    echo $user ['texte'] ."<br>";
+    echo ("<br>" .$user ['auteur']);
 
-    echo "</ul>";
+    echo ("<br><br>" .$user ['texte']);
+
+    echo ("<br><br>" .$user ['date de publication']. "<br><br><br>");
+
+    echo ("</ul>");
 }
 ?>
