@@ -38,7 +38,7 @@ foreach ($users as $user){
     
     echo ("<br>" .$user ['auteur']);
 
-    echo ("<br><br>" .$user ['texte']);
+    echo ("<br><br>" .$user ['extrait']);
 
     echo ("<br><br>" .$user ['date de publication']. "<br><br><br>");
 

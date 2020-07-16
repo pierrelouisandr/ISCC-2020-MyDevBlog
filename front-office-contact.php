@@ -1,6 +1,4 @@
-
-
-<p><form action ="index.php?page=contact" method ="post">
+<p><form action ="front.php?page=contact" method ="post">
 
 <div>
 <label for ="name/firstname"> Nom/Prénom :</label> 
