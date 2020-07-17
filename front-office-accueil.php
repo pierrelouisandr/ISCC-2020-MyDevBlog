@@ -16,9 +16,16 @@
            Ce projet sert à démontrer toutes nos capacités apprises durant ce mois.
         <br><p> Dans ce blog, je partage des informations concernant nos amis <b><i> les animaux </i></b> afin de mieux comprendre leur mode de vie.</p>
         <p> De plus, ce blog sert aussi à sensibiliser les personnes sur <b><i> les animaux </i></b> en voie de disparision.</p>
-    
     </main>  
 
+<main class="image">
+        <div>
+                     <img src="Orang_Utan.jpg"  alt="photo codage" width="400" height="500">  <img src="guepard.jpg"  alt="photo stage codage" width="400" height="500">
+        </div>    
+                
+</main>
+
+<main class="articles">
         <?php 
       function connect_to_database(){
      $servername = 'localhost';
@@ -40,11 +47,11 @@ $pdo= connect_to_database();
 $users = $pdo->query("SELECT * FROM articles ORDER BY id DESC LIMIT 5")->fetchAll();
        echo "<ul>";
 foreach ($users as $user){
-    echo "<li><a href = \"articles.php?articles=".$user['id']."\">". $user ['titre']."  </a></li>";
+    echo "<p><a href = \"articles.php?articles=".$user['id']."\">". $user ['titre']."</a><br>";
     echo $user ['extrait']."<br></p>";
 }
 echo "</ul>";
 
 ?>
-  
+</main>  
 </html> 
