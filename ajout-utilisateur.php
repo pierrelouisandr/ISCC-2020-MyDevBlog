@@ -31,12 +31,12 @@ echo "connection failed : ".$e->getMessage();
 }
 
 $pdo = connect_to_database();
-$nom=$_POST["nom utilisateur"];
+$nom=$_POST["nom"];
 $login=$_POST["login"];
 $password=$_POST["password"];
 
-$result=$pdo->query("INSERT INTO `utilisateurs` VALUES ('$nom', '$login', '$password')");
+$result=$pdo->query("INSERT INTO `utilisateurs` VALUES ('', '$nom', '$login', '$password')");
 
-if (isset($_POST['nom utilisateur']))
-header ("Location: back-office.php");
+if (isset($_POST['nom']))
+header ("Location: back-office.php?page=Utilisateurs");
 ?>
