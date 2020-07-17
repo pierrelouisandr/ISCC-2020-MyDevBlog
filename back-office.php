@@ -33,6 +33,10 @@ if (isset($_GET["page"]) && $_GET["page"] == "utilisateurs") {
 include "utilisateurs.php";
 } 
 
+if (isset($_GET["page"]) && $_GET["page"] == "liste article") {
+    include "liste-article.php";
+    } 
+
 if (isset($_GET["page"]) && $_GET["page"] == "deconnexion") {
 include "deconnexion.php";
 } 
