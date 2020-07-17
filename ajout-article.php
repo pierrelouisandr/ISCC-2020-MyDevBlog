@@ -47,6 +47,7 @@ echo "connection failed : ".$e->getMessage();
 }
 
 $pdo = connect_to_database();
+
 $titre=$_POST["titre"];
 $image=$_POST["image"];
 $auteur=$_POST["auteur"];
