@@ -34,6 +34,11 @@ if (isset($_GET["page"]) && $_GET["page"] == "contact") {
 include "front-office-contact.php";
 } 
 
+if (isset($_GET["page"]) && $_GET["page"] == "connexion") {
+    include "connexion.php";
+} 
+
+
 
 ?>
 

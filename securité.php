@@ -22,7 +22,7 @@ echo "<br>password : ".$_POST['password'];
 session_start();
 $_SESSION ["id"]= $_POST ['login'];
 setcookie("id",$_SESSION["id"]);
-header ('Location: front.php?page=accueil');
+header ('Location: back-office.php?page=accueil');
 
 }
 else {

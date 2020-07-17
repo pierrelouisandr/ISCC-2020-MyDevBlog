@@ -20,9 +20,6 @@ include ("navigation2.php");
 
 <?php
 
-if (isset($_GET["page"]) && $_GET["page"] == "connexion") {
-    include "connexion.php";
-} 
 
 if (isset($_GET["page"]) && $_GET["page"] == "ajout article") {
 include "ajout-article.php";

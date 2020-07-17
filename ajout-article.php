@@ -1,5 +1,10 @@
+
+
 <form action="ajout-article.php" method="post" enctype="multipart/form-data">
- 
+
+<label for="id"></label>
+<input type="text" id="id" name="id" placeholder="id"><br>
+
  <label for="titre"></label>
 <input type="text" id="titre" name="titre" placeholder="titre"><br>
 
@@ -13,7 +18,7 @@
 <input type="text" id="texte" name="texte" placeholder="texte"><br>
 
 <label for="date de publication"></label>
-<input type="text" id="date de publication" name= "date de publication" placeholder="date de publication"><br>
+<input type="texte" id="date de publication" name= "date de publication" placeholder="date de publication"><br>
 
 <label for="extrait"></label>
 <input type="text" id="extrait" name= "extrait" placeholder="extrait"><br>
@@ -43,12 +48,12 @@ echo "connection failed : ".$e->getMessage();
 
 $pdo = connect_to_database();
  
-$sql = "INSERT $title, $img INTO articles(titre, img, auteur, texte, extrait, date) values($titre, $img, $auteur, $texte, $extraie);";
+$sql = "INSERT $title, $imgage INTO articles(id, titre, imgage, auteur, texte, extrait, date de publication) values($titre, $imgage, $auteur, $texte, $extraie, $datedepublication);";
  
 if ($conn->query($sql) === TRUE) {
 } else {
  echo "Error: " . $sql . "<br>" . $conn->error;
 }
-;
- 
+
+
 ?>
