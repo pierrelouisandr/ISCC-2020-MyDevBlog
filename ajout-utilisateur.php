@@ -22,7 +22,7 @@ $madatabase = 'backoffice';
 try { 
 $pdo = new PDO("mysql:host=$servername;dbname=$madatabase",$username,$password);
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-echo "Connected Successfully"; 
+
 return $pdo;
 }
 catch (PDOException $e){
@@ -31,12 +31,12 @@ echo "connection failed : ".$e->getMessage();
 }
 
 $pdo = connect_to_database();
+$nom=$_POST["nom utilisateur"];
+$login=$_POST["login"];
+$password=$_POST["password"];
 
-$users = $pdo->query("SELECT * FROM `utilisateurs` WHERE `login` LIKE '%$login%'")->fetchAll();
+$result=$pdo->query("INSERT INTO `utilisateurs` VALUES ('$nom', '$login', '$password')");
 
-if (empty($users[0]["id"])) {
-    $pdo->query("INSERT INTO `utilisateurs` (`id`, `nom utilisateur`, `login`, `password`VALUE (NULL, '$utilisateur', '$login', '$password')");
-    $pdo->query("UPDATE `utilisateurs` SET `password`='$password', `nom utilisateur`='$utilisateur' WHERE `nom utilisateur`.`id` = '${users['id']}';");
-
-}
+if (isset($_POST['nom utilisateur']))
+header ("Location: back-office.php");
 ?>

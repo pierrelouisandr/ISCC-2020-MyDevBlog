@@ -2,5 +2,5 @@
 session_start();
 unset($_SESSION["id"]);
 echo"blog";
-header('Location: back-office.php?page=accueil');
+header('Location: front.php?page=accueil');
 ?>
