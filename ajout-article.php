@@ -34,7 +34,7 @@ function connect_to_database(){
 $servername = 'localhost';
 $username = 'root';
 $password= '';
-$madatabase = 'backoffice';
+$madatabase = 'mydevblog';
 try { 
 $pdo = new PDO("mysql:host=$servername;dbname=$madatabase",$username,$password);
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -47,13 +47,15 @@ echo "connection failed : ".$e->getMessage();
 }
 
 $pdo = connect_to_database();
- 
-$sql = "INSERT $title, $imgage INTO articles(id, titre, imgage, auteur, texte, extrait, date de publication) values($titre, $imgage, $auteur, $texte, $extraie, $datedepublication);";
- 
-if ($conn->query($sql) === TRUE) {
-} else {
- echo "Error: " . $sql . "<br>" . $conn->error;
-}
+$titre=$_POST["titre"];
+$image=$_POST["image"];
+$auteur=$_POST["auteur"];
+$texte=$_POST["texte"];
+$datedepublication=$_POST["date de publication"];
+$extrait=$_POST["extrait"];
 
+$result=$pdo->query("INSERT INTO `articles` VALUES ('', '$titre', '$image', '$auteur', '$texte', '$datedepublication', '$extrait')");
 
+if (isset($_POST['titre']))
+header ("Location: back-office.php?page=liste article");
 ?>
