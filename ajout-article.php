@@ -18,7 +18,7 @@
 <input type="text" id="texte" name="texte" placeholder="texte"><br>
 
 <label for="date de publication"></label>
-<input type="texte" id="date de publication" name= "date de publication" placeholder="date de publication"><br>
+<input type="date" id="date de publication" name= "date de publication" placeholder="date de publication"><br>
 
 <label for="extrait"></label>
 <input type="text" id="extrait" name= "extrait" placeholder="extrait"><br>
